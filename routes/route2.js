@@ -16,10 +16,9 @@ function getColorByName(colorString) {
     for(var i = 0; i < colorObject.colors.length; i++) {
         if(colorObject.colors[i].color === colorString) {
             return colorObject.colors[i];
-        } else {
-            return null;
         }
-    } 
+    }
+    return "Color doesn't exist."; 
 }
 
 module.exports = router;
